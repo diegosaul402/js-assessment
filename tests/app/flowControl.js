@@ -10,7 +10,6 @@ describe('flow control', function() {
     while (num % 3 === 0 || num % 5 === 0) {
       num = Math.floor(Math.random() * 10) + 1;
     }
-
     expect(flowControlAnswers.fizzBuzz()).not.to.be.ok;
     expect(flowControlAnswers.fizzBuzz('foo')).not.to.be.ok;
     expect(flowControlAnswers.fizzBuzz(2)).to.eql(2);
